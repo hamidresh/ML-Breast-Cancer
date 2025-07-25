@@ -1,4 +1,4 @@
-Breast Cancer Survival Prediction
+# 🎗️ Breast Cancer Survival Prediction
 Breast cancer is one of the most common types of cancer among women, and early detection can significantly improve the chances of survival.
 With advancements in technology and the use of machine learning techniques, faster and more accurate detection of the disease has become possible.
 In this project, various machine learning algorithms are implemented and evaluated on a breast cancer dataset to provide accurate and reliable results for predicting the survival status of patients.
@@ -65,22 +65,24 @@ Model Evaluation Metrics :
 * Recall
 * F1-Score
 
-Algorithm | Accuracy | Precision | Recall | F1-Score
-Naive Bayes | 0.831 | 0.514 | 0.514 | 0.514
-KNN | 0.870 | 0.687 | 0.471 | 0.559
-Decision Tree | 0.908 | 0.823 | 0.600 | 0.695
-Random Forest | 0.915 | 0.928 | 0.557 | 0.696
-SVM (linear) | 0.890 | 0.861 | 0.442 | 0.584
-SVM (poly) | 0.885 | 0.852 | 0.414 | 0.557
-SVM (rbf) | 0.888 | 0.857 | 0.428 | 0.571
-SVM (sigmoid) | 0.816 | 0.464 | 0.371 | 0.412
-Logistic Regression | 0.900 | 0.875 | 0.500 | 0.636
-ANN | 0.905 | 0.880 | 0.528 | 0.660
-Ensemble (Hard Voting) | 0.903 | 0.860 | 0.528 | 0.654
-Ensemble (Soft Voting) | 0.903 | 0.829 | 0.557 | 0.666
-Stacking Classifier | 0.905 | 0.880 | 0.528 | 0.660
-Random Over Sampling | 0.898 | 0.716 | 0.685 | 0.700
-SMOTE Oversampling | 0.885 | 0.671 | 0.671 | 0.671
+| Algorithm                 | Accuracy | Precision | Recall | F1-Score |
+|---------------------------|----------|-----------|--------|----------|
+| Naive Bayes               | 0.831    | 0.514     | 0.514  | 0.514    |
+| k-Nearest Neighbors (KNN) | 0.870    | 0.687     | 0.471  | 0.559    |
+| Decision Tree             | 0.908    | 0.823     | 0.600  | 0.695    |
+| Random Forest             | 0.915    | 0.928     | 0.557  | 0.696    |
+| SVM (Linear)              | 0.890    | 0.861     | 0.442  | 0.584    |
+| SVM (Polynomial)          | 0.885    | 0.852     | 0.414  | 0.557    |
+| SVM (RBF)                 | 0.888    | 0.857     | 0.428  | 0.571    |
+| SVM (Sigmoid)             | 0.816    | 0.464     | 0.371  | 0.412    |
+| Logistic Regression       | 0.900    | 0.875     | 0.500  | 0.636    |
+| Artificial Neural Network | 0.905    | 0.880     | 0.528  | 0.660    |
+| Ensemble - Hard Voting    | 0.903    | 0.860     | 0.528  | 0.654    |
+| Ensemble - Soft Voting    | 0.903    | 0.829     | 0.557  | 0.666    |
+| Stacking Classifier       | 0.905    | 0.880     | 0.528  | 0.660    |
+| Random Over Sampling      | 0.898    | 0.716     | 0.685  | 0.700    |
+| SMOTE Oversampling        | 0.885    | 0.671     | 0.671  | 0.671    |
+
 
 Best Model: Decision Tree {
 Accuracy: 91%
