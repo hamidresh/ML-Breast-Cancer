@@ -1,69 +1,86 @@
 # 🎗️ Breast Cancer Survival Prediction
-Breast cancer is one of the most common types of cancer among women, and early detection can significantly improve the chances of survival.
-With advancements in technology and the use of machine learning techniques, faster and more accurate detection of the disease has become possible.
-In this project, various machine learning algorithms are implemented and evaluated on a breast cancer dataset to provide accurate and reliable results for predicting the survival status of patients.
 
-Dataset
-The dataset used in this project is obtained from the November 2017 update of the SEER (Surveillance, Epidemiology, and End Results) program by the National Cancer Institute (NCI).
-This dataset contains information about female patients diagnosed with invasive ductal and lobular carcinoma (code 8522/3) between 2006 and 2010.
+This project aims to predict the survival status of breast cancer patients using various machine learning algorithms. Early detection and accurate prediction can significantly improve patient outcomes, enable better treatment planning, and assist healthcare professionals in clinical decision-making.
 
-* Data preprocessing steps:
-Removal of patients with unknown tumor size or unexamined regional lymph nodes
+---
 
-Exclusion of patients with survival times less than one month
+## Publication
 
-Finally, 4024 patients were included in the study.
+This project has been published as a research paper in collaboration with professors Mr. Samad Najjar-Ghabel and Ms. Shamim Yousefi.
 
-Metadata of the dataset is provided in the image below.
+Paper title: A Technical Analysis and Practical Implementation of Machine Learning Algorithms for Predicting Survival in Breast Cancer Patients 
+Available at: [IEEE Xplore – View Paper](https://ieeexplore.ieee.org/document/10773521)
 
-Project Objective
-The objective of this project is to evaluate and compare the performance of different machine learning algorithms for predicting the survival of breast cancer patients. These predictions can help:
+---
 
-Improve treatment planning,
+## Dataset
 
-Better management of medical resources,
+The dataset used in this project was obtained from the SEER (Surveillance, Epidemiology, and End Results) program – November 2017 update, released by the National Cancer Institute (NCI).
 
-Enable patients and their families to make more informed decisions.
+- Focused on female patients diagnosed with invasive ductal and lobular carcinoma (code 8522/3) between 2006 and 2010.
+- Final dataset included 4024 patients after preprocessing.
 
-Data Preprocessing
-Removed noise from the data
+### Preprocessing Steps
 
-Converted ordinal and nominal features into numeric values
+- Removed patients with unknown tumor size or unexamined regional lymph nodes.
+- Excluded patients with survival time less than one month.
+- Converted categorical features to numerical values.
+- Normalized the data using Z-score normalization.
+- Split the data into:
+  - 90% training
+  - 10% testing
 
-Normalized the data using Z-Score
+---
 
-Split the dataset into:
+## Objective
 
-90% for training
+The primary objective of this project is to evaluate and compare the performance of various machine learning algorithms for predicting breast cancer patient survival. Accurate predictions can support:
 
-10% for testing
+- Informed treatment planning
+- Efficient allocation of medical resources
+- Better support for patients and their families in decision-making
 
-Implemented Machine Learning Algorithms :
-1. Naive Bayes
-2. k-Nearest Neighbors (KNN)
-3. Decision Tree
-4. Random Forest
-* Support Vector Machine (SVM) with kernels:
-5. Linear
-6. Polynomial
-7. RBF
-8. Sigmoid
-9. Logistic Regression
-10. Artificial Neural Network (ANN)
-11. Ensemble Learning Techniques:
-12. Hard Voting
-13. Soft Voting
-14. Stacking Classifier
-15. Data Augmentation
-* To address the imbalance between the number of positive (dead) and negative (alive) samples, the following data augmentation techniques were applied:
-16. Random Over Sampling
-17. SMOTE (Synthetic Minority Over-sampling Technique)
+---
 
-Model Evaluation Metrics :
-* Accuracy
-* Precision
-* Recall
-* F1-Score
+## Machine Learning Models
+
+### Algorithms Implemented
+
+- Naive Bayes  
+- k-Nearest Neighbors (KNN)  
+- Decision Tree  
+- Random Forest  
+- Support Vector Machine (SVM) with the following kernels:
+  - Linear
+  - Polynomial
+  - RBF
+  - Sigmoid
+- Logistic Regression  
+- Artificial Neural Network (ANN)  
+- Ensemble Learning Methods:
+  - Hard Voting
+  - Soft Voting
+  - Stacking Classifier
+
+### Data Augmentation
+
+To address class imbalance (i.e., more "alive" than "dead" samples), the following augmentation techniques were applied:
+
+- Random Over Sampling  
+- SMOTE (Synthetic Minority Over-sampling Technique)
+
+---
+
+## Evaluation Metrics
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score
+
+---
+
+## Performance Comparison
 
 | Algorithm                 | Accuracy | Precision | Recall | F1-Score |
 |---------------------------|----------|-----------|--------|----------|
@@ -83,22 +100,27 @@ Model Evaluation Metrics :
 | Random Over Sampling      | 0.898    | 0.716     | 0.685  | 0.700    |
 | SMOTE Oversampling        | 0.885    | 0.671     | 0.671  | 0.671    |
 
+---
 
-Best Model: Decision Tree {
-Accuracy: 91%
-Precision: 82.3%
-Recall: 60%
-F1-Score: 0.695 }
+## Best Model
 
-Analysis of Results 
-The Decision Tree model outperformed other models with an accuracy of 91%.
-The Precision and Recall scores indicate that the model was able to correctly identify positive cases (dead patients), although some positive cases were misclassified.
-The F1-Score of 0.7 reflects a good balance between Precision and Recall.
+The Random Forest algorithm achieved the highest accuracy (91.5%) and precision (92.8%), making it the top-performing model in this study. However, other models such as Decision Tree, ANN, and ensemble methods like Stacking and Soft Voting also demonstrated strong performance.
 
-Conclusion
-Machine learning algorithms can play a crucial role in predicting the survival of breast cancer patients, and this project demonstrates their potential for assisting in medical decision-making. These predictions could contribute to better treatment planning and healthcare management.
+---
 
-Publication
-This project has been published in the form of a research paper, the link to which is provided below. The paper was conducted in collaboration with professors Mr. Samad Najjar-Ghabel and Ms. Shamim Yousefi.
-https://ieeexplore.ieee.org/document/10773521
+## Conclusion
 
+This project demonstrates the effectiveness of various machine learning algorithms, particularly ensemble learning techniques, in predicting the survival of breast cancer patients. The findings show the potential of such models to assist in medical prognosis, treatment optimization, and decision support systems in healthcare environments.
+
+---
+
+## Technologies Used
+
+- Python  
+- scikit-learn  
+- NumPy, Pandas  
+- Matplotlib, Seaborn  
+- Imbalanced-learn (for SMOTE)  
+- Machine Learning, Data Mining
+
+---
